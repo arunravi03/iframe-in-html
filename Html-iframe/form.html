@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        .form-element {
+            text-align: center;
+            padding: 8px;
+            display: inline-block;
+            border: none;
+        }
+
+        .reg-btn {
+            background-color: blue;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="main-form" action="success.html">
+        <div class="form-container">
+            <div class="form-element">
+                <label for="name">
+                    <input type="text" class="name" placeholder="name" required>
+                </label>
+            </div><br>
+            <div class="form-element">
+                <label for="email">
+                    <input type="email" class="email" placeholder="email" required>
+                </label>
+            </div><br>
+            <div class="form-element">
+                <label for="password">
+                    <input type="password" class="password" placeholder="password">
+                </label>
+            </div><br>
+            <input type="button" class="reg-btn" onclick="myFunction()" value="Submit">
+        </div>
+    </form>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("main-form").submit();
+    }
+</script>
+
+</html>
